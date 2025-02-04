@@ -18,7 +18,7 @@ const UpdateStudent = () => {
             setStdLoading(true)
 
           try{
-            const response = await axios.get(`http://localhost:5000/api/student/${id}`, {
+            const response = await axios.get(`https://sms-backend-theta.vercel.app/api/student/${id}`, {
               headers: {
                 Authorization: `Bearer ${localStorage.getItem('token')}` 
               }
@@ -63,7 +63,7 @@ const UpdateStudent = () => {
       const handleSubmit = async (e) =>{
         e.preventDefault()
         try {
-          const response = await axios.put(`http://localhost:5000/api/student/${id}`,
+          const response = await axios.put(`https://sms-backend-theta.vercel.app/api/student/${id}`,
             student,{
               headers:{
                 Authorization: `Bearer ${localStorage.getItem("token")}`,

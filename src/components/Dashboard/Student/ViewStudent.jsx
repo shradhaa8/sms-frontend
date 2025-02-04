@@ -10,7 +10,7 @@ const ViewStudent = () => {
   useEffect(() => {
     const fetchStudent = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/student/${id}`, {
+        const response = await axios.get(`https://sms-backend-theta.vercel.app/api/student/${id}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`,
           },
@@ -45,7 +45,7 @@ const ViewStudent = () => {
             
             {student.userId.profileImage ? (
               <img
-                src={`http://localhost:5000/${student.userId.profileImage}`}
+                src={`https://sms-backend-theta.vercel.app/${student.userId.profileImage}`}
                 alt="student_image"
                 className="w-full h-auto rounded-md"
               />

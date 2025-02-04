@@ -49,7 +49,7 @@ export const StudentButtons = ({_id, onStudentDelete}) =>{
         const confirm = window.confirm("Do you want to delete?")
         if(confirm){
         try{
-            const response = await axios.delete(`http://localhost:5000/api/student/${_id}`, {
+            const response = await axios.delete(`https://sms-backend-theta.vercel.app/api/student/${_id}`, {
               headers: {
                 Authorization : `Bearer ${localStorage.getItem('token')}` 
               }

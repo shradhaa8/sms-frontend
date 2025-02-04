@@ -18,7 +18,7 @@ useEffect(()=> {
   const fetchStudents =async ()=>{
     setStdLoading(true)
     try{
-      const response = await axios.get('http://localhost:5000/api/student', {
+      const response = await axios.get('https://sms-backend-theta.vercel.app/api/student', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
 
