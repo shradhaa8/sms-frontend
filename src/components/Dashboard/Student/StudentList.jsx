@@ -34,7 +34,7 @@ useEffect(()=> {
             email: std.email,
             age: std.age,
             course_enrolled: std.course_enrolled,
-            profileImage: <img width={30} className= 'w-10 h-10 object-cover rounded-full' src={`http://localhost:5000/${std.userId.profileImage}`} />,
+            profileImage: <img width={30} className= 'w-10 h-10 object-cover rounded-full' src={`https://sms-backend-theta.vercel.app/${std.userId.profileImage}`} />,
             action: <StudentButtons _id={std._id} onStudentDelete={onStudentDelete}/>
 
           }

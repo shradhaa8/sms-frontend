@@ -12,7 +12,7 @@ const Login = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        setError(null); // Reset error before new request
+        setError(null); 
 
         try {
             const response = await axios.post("https://sms-backend-theta.vercel.app/api/auth/login", { email, password });
