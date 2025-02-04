@@ -37,7 +37,7 @@ const AddStudent = () => {
     })
 
     try {
-      const response = await axios.post("https://sms-frontend-indol.vercel.app/api/student/addstudent",
+      const response = await axios.post("https://sms-backend-theta.vercel.app/api/student/addstudent",
         formDataObj,{
           headers:{
             Authorization: `Bearer ${localStorage.getItem("token")}`,
