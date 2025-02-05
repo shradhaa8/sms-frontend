@@ -11,7 +11,7 @@ const authContext = ({children}) => {
             try {
                 const token = localStorage.getItem('token')
                 if(token){
-                const response = await axios.get('https://sms-backend-theta.vercel.app/api/auth/verify',{
+                const response = await axios.get('https://sms-backend-eight.vercel.app/api/auth/verify',{
                     headers: {
                         "Authorization" : `Bearer ${token}`
                     }

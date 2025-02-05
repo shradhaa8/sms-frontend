@@ -18,7 +18,7 @@ useEffect(()=> {
   const fetchStudents =async ()=>{
     setStdLoading(true)
     try{
-      const response = await axios.get('https://sms-backend-theta.vercel.app/api/student', {
+      const response = await axios.get('https://sms-backend-eight.vercel.app/api/student', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
 
@@ -34,7 +34,7 @@ useEffect(()=> {
             email: std.email,
             age: std.age,
             course_enrolled: std.course_enrolled,
-            profileImage: <img width={30} className= 'w-10 h-10 object-cover rounded-full' src={`https://sms-backend-theta.vercel.app/${std.userId.profileImage}`} />,
+            profileImage: <img width={30} className= 'w-10 h-10 object-cover rounded-full' src={`https://sms-backend-eight.vercel.app/${std.userId.profileImage}`} />,
             action: <StudentButtons _id={std._id} onStudentDelete={onStudentDelete}/>
 
           }

@@ -10,7 +10,7 @@ const Details = () => {
   useEffect(()=>{
     const fetchDetail = async () =>{
       try {
-        const detail = await axios.get('https://sms-backend-theta.vercel.app/api/dashboard/detail',{
+        const detail = await axios.get('https://sms-backend-eight.vercel.app/api/dashboard/detail',{
           headers :{
             "Authorization" : `Bearer ${localStorage.getItem('token')}`
           }

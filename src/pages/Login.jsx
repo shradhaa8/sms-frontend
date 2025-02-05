@@ -15,7 +15,7 @@ const Login = () => {
         setError(null); 
 
         try {
-            const response = await axios.post("https://sms-backend-theta.vercel.app/api/auth/login", { email, password });
+            const response = await axios.post("https://sms-backend-eight.vercel.app/api/auth/login", { email, password });
 
             if (response?.data?.success) {
                 login(response.data.user);
